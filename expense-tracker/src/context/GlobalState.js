@@ -1,4 +1,5 @@
 import React, { useReducer, createContext } from "react";
+import { AppReducer } from "./AppReducer";
 
 //? Initial State
 
@@ -13,7 +14,7 @@ const initialState = {
 
 //? Create context
 
-export const GlobalContext = createContext();
+export const GlobalContext = createContext(initialState);
 
 //? Provider Component
 
